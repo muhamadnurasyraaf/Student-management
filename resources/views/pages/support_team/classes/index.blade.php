@@ -29,8 +29,8 @@
                             @foreach($my_classes as $c)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $c->name }}</td>
-                                    <td>{{ $c->class_type->name }}</td>
+                                    <td>{{ $c->name ?? '' }}</td>
+                                    <td>{{ $c->class_type->name ?? ''}}</td>
                                     <td class="text-center">
                                         <div class="list-icons">
                                             <div class="dropdown">
